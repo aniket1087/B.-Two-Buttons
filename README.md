@@ -6,10 +6,11 @@ int main(){
          ios_base::sync_with_stdio(false);
          cin.tie(NULL);
          
-         ll n,m;cin>>n>>m;
+         ll n,m;cin>>n>>m;//taking input
          ll s=m;
          ll d=n;
-         ll op=0;
+         ll op=0;//intialize with zero
+         //The problem can be reversed as follows--> we should get the number n starting from m using the operations "add 1 to the number" and "divide the number by 2          if it is even".
          while(s>d){
                if(s%2!=0){
                      op++;
